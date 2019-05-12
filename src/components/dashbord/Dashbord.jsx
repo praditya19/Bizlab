@@ -95,7 +95,7 @@ export default function Album() {
             style={{
               backgroundColor: "green",
               color: "white",
-              marginLeft: 100
+              marginLeft: 50
             }}
             component={Link}
             to="/login"
