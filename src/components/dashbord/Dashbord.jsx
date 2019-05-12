@@ -91,7 +91,7 @@ export default function Album() {
           />
           <Typography style={{ marginLeft: 20 }}>Home</Typography>
           <Typography style={{ marginLeft: 20 }}>Cari Kelas</Typography>
-          <Button
+          {/* <Button
             style={{
               backgroundColor: "green",
               color: "white",
@@ -101,7 +101,7 @@ export default function Album() {
             to="/login"
           >
             Masuk
-          </Button>
+          </Button> */}
         </Toolbar>
       </AppBar>
       <main>
