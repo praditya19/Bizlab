@@ -10,6 +10,7 @@ import Container from "@material-ui/core/Container";
 import Kartu from "../card/Kartu";
 import Testimoni from "../testimoni/Testimoni";
 import Vidio from "../vidiopembelajaran/vidio";
+import { Link } from "react-router-dom";
 const useStyles = makeStyles(theme => ({
   "@global": {
     strong: {
@@ -156,7 +157,8 @@ export default function Blog() {
                   Pilih kelas belajar keterampilan profesional terkini
                 </p>{" "}
                 <Button
-                  href="/login"
+                  component={Link}
+                  to="/login"
                   variant="contained"
                   className={classes.btn}
                 >
