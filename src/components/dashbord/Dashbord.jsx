@@ -109,8 +109,8 @@ const footers = [
     ]
   },
   {
-    title: "Ikuti Sosial Media Kami",
-    description: ["Privacy policy", "Terms of use"]
+    title: "Sosial Media Kami",
+    description: ["Facebook", "Instagram"]
   }
 ];
 export default function Blog() {
