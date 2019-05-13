@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   btn: {
     background: "#f5e900",
     borderRadius: 50,
-    width: 300,
+    width: 250,
     color: "white"
   },
   menuButton: {
