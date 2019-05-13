@@ -13,8 +13,8 @@ const styles = theme => ({
     flexGrow: 1
   },
   card: {
-    height: 350,
-    width: 300
+    height: "100%",
+    margin: 10
   }
 });
 

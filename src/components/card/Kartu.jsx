@@ -19,8 +19,7 @@ const styles = theme => ({
     color: theme.palette.text.secondary
   },
   card: {
-    height: 350,
-    width: 350,
+    height: "100%",
     borderRadius: 40,
     border: "solid 1px",
     color: "yellow"
@@ -32,7 +31,7 @@ function Kartu(props) {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div style={{ background: "#efefef" }} className={classes.root}>
+    <div style={{ background: "white" }} className={classes.root}>
       <Container>
         <h1 style={{ textAlign: "left" }}>Why Bizlab?</h1>
         <center>
