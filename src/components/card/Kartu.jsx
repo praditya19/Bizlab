@@ -20,7 +20,7 @@ const styles = theme => ({
   },
   card: {
     height: 350,
-    width: 300,
+    width: 350,
     borderRadius: 40,
     border: "solid 1px",
     color: "yellow"
