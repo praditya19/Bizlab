@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   btn: {
     background: "#f5e900",
     borderRadius: 50,
-    width: "50%",
+    width: "100%",
     color: "white"
   },
 
