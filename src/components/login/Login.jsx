@@ -99,7 +99,8 @@ export default function SignInSide() {
               />
 
               <Button
-                href="/vidio"
+                component={Link}
+                to="/vidio"
                 type="submit"
                 fullWidth
                 variant="contained"
