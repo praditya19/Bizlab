@@ -32,8 +32,8 @@ function Kartu(props) {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Container>
-      <div style={{ background: "white" }} className={classes.root}>
+    <div style={{ background: "#efefef" }} className={classes.root}>
+      <Container>
         <h1 style={{ textAlign: "left" }}>Why Bizlab?</h1>
         <center>
           <Grid container spacing={3}>
@@ -115,8 +115,8 @@ function Kartu(props) {
             </Grid>
           </Grid>
         </center>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
