@@ -8,6 +8,9 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 const styles = theme => ({
   root: {
     flexGrow: 1
@@ -43,109 +46,115 @@ function FullWidthGrid(props) {
   const { classes } = props;
 
   return (
-    <div style={{ margin: 1 }} className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
-              <CardContent className={classes.cardContent}>
-                <Typography>
-                  Membuat Prioritas Pekerjaan Einsenhower Matrix
-                </Typography>
-              </CardContent>
-              <br />
-              <CardActions>
-                <p variant="h5" gutterBottom color="primary">
-                  Evarisma Zahra
-                </p>
-              </CardActions>
-            </Card>
-          </Paper>
-        </Grid>
+    <div style={{ margin: 1, background: "#efefef" }} className={classes.root}>
+      <Container>
+        <Button style={{ float: "right" }} component={Link} to="/vidio">
+          View All
+        </Button>
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={3}>
+            <Paper className={classes.paper}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="Image title"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography>
+                    Membuat Prioritas Pekerjaan Einsenhower Matrix
+                  </Typography>
+                </CardContent>
+                <br />
+                <CardActions>
+                  <p variant="h5" gutterBottom color="primary">
+                    Evarisma Zahra
+                  </p>
+                </CardActions>
+              </Card>
+            </Paper>
+          </Grid>
 
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
-              <CardContent className={classes.cardContent}>
-                <Typography>
-                  Memahamai Dasar Financial Pribadi dan Usaha
-                </Typography>
-              </CardContent>
-              <br />
-              {""}
-              <CardActions>
+          <Grid item xs={12} sm={3}>
+            <Paper className={classes.paper}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="Image title"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography>
+                    Memahamai Dasar Financial Pribadi dan Usaha
+                  </Typography>
+                </CardContent>
                 <br />
-                <p variant="h5" gutterBottom color="primary">
-                  Khaled Hadi Pranowo
-                </p>
-              </CardActions>
-            </Card>
-          </Paper>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
-              <CardContent className={classes.cardContent}>
-                <Typography>
-                  Menentukan Value Proposition Sebuah Produk
-                </Typography>
-              </CardContent>
-              <br />
-              <CardActions>
+                {""}
+                <CardActions>
+                  <br />
+                  <p variant="h5" gutterBottom color="primary">
+                    Khaled Hadi Pranowo
+                  </p>
+                </CardActions>
+              </Card>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Paper className={classes.paper}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="Image title"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography>
+                    Menentukan Value Proposition Sebuah Produk
+                  </Typography>
+                </CardContent>
                 <br />
-                <p variant="h5" gutterBottom color="primary">
-                  Aditya Putra
-                </p>
-              </CardActions>
-            </Card>
-          </Paper>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
-              <CardContent className={classes.cardContent}>
-                <Typography>Belajar Analisa Data dengan SPSS</Typography>
-              </CardContent>
-              <br />
-              <br />
-              <CardActions>
+                <CardActions>
+                  <br />
+                  <p variant="h5" gutterBottom color="primary">
+                    Aditya Putra
+                  </p>
+                </CardActions>
+              </Card>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Paper className={classes.paper}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="Image title"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography>Belajar Analisa Data dengan SPSS</Typography>
+                </CardContent>
                 <br />
+                <br />
+                <CardActions>
+                  <br />
 
-                <p variant="h5" gutterBottom color="primary">
-                  Erna Fransiska
-                </p>
-              </CardActions>
-            </Card>
-          </Paper>
+                  <p variant="h5" gutterBottom color="primary">
+                    Erna Fransiska
+                  </p>
+                </CardActions>
+              </Card>
+            </Paper>
+          </Grid>
         </Grid>
-      </Grid>
-      <br />
-      <h3 variant="h6" style={{ textAlign: "left", marginLeft: 10 }}>
-        Workshop
-      </h3>
-      <h1 variant="h6" style={{ textAlign: "center" }}>
-        Not Found
-      </h1>
+        <br />
+        <h3 variant="h6" style={{ textAlign: "left", marginLeft: 10 }}>
+          Workshop
+        </h3>
+        <h1 variant="h6" style={{ textAlign: "center" }}>
+          Not Found
+        </h1>
+        <br />
+      </Container>
     </div>
   );
 }
