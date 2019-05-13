@@ -187,6 +187,40 @@ export default function Blog() {
         <Testimoni />
         <br />
         <br />
+        <Container>
+          <Paper className={classes.mainFeaturedPost}>
+            {/* Increase the priority of the hero background image */}
+            {
+              <img
+                style={{ display: "none" }}
+                src="https://source.unsplash.com/user/erondu"
+                alt="background"
+              />
+            }
+            <div className={classes.overlay} />
+            <Grid container>
+              <Container style={{ textAlign: "center" }} maxWidth="sm">
+                <div className={classes.mainFeaturedPostContent}>
+                  <h3
+                    component="h1"
+                    variant="h3"
+                    color="inherit"
+                    align="center"
+                    gutterBottom
+                  >
+                    Daftar Menjadi Trainer
+                  </h3>
+                  <p variant="h5" color="inherit" align="center" paragraph>
+                    klik untuk daftar mendaftar jadi trainer di Bizlab
+                  </p>
+                  <Button className={classes.btn} variant="outlined">
+                    Daftar Sekarang
+                  </Button>
+                </div>
+              </Container>
+            </Grid>
+          </Paper>
+        </Container>
       </main>
       <Container>
         <footer className={(classes.footer, classes.layout)}>
@@ -210,7 +244,6 @@ export default function Blog() {
             ))}
           </Grid>
           <hr />
-
           <p style={{ marginLeft: 20 }}>@copyright Bizlab</p>
         </footer>
       </Container>

@@ -22,8 +22,8 @@ const styles = theme => ({
     height: 350,
     width: 300,
     borderRadius: 40,
-    border: "solid 5px",
-    background: "red"
+    border: "solid 2px",
+    color: "yellow"
   }
 });
 
@@ -41,19 +41,20 @@ function Kartu(props) {
               {" "}
               <Card className={classes.card}>
                 <CardContent>
-                  <Typography
+                  <h3
+                    style={{ color: "black" }}
                     className={classes.title}
                     color="textSecondary"
                     gutterBottom
                   >
                     Popular In-demand Skills
-                  </Typography>
+                  </h3>
                   <img
                     src="https://www.computer-course-center.com/assets/img/gallery/40adb40d8366669ed30217bb72bb1c29.jpg"
                     height="150px"
                     alt="logo"
                   />
-                  <p style={{ textAlign: "left" }} variant="h5">
+                  <p style={{ textAlign: "left", color: "black" }} variant="h5">
                     Bizlab menghadirkan kelas-kelas belajar keterampilan
                     kekinian yang sedang banyak dibutuhkan perusahaan dan
                     pekerjaan freelance .
@@ -66,19 +67,20 @@ function Kartu(props) {
               {" "}
               <Card className={classes.card}>
                 <CardContent>
-                  <Typography
+                  <h3
+                    style={{ color: "black" }}
                     className={classes.title}
                     color="textSecondary"
                     gutterBottom
                   >
                     Online to Offline Workshop
-                  </Typography>
+                  </h3>
                   <img
                     src="https://www.renate-europe.net/wp-content/uploads/2018/07/hhh.jpg"
                     height="150px"
                     alt="logo"
                   />
-                  <p style={{ textAlign: "left" }} variant="h2">
+                  <p style={{ textAlign: "left", color: "black" }} variant="h2">
                     Kamu bisa mengatur kapan saja ingin belajar melalui internet
                     atau memutuskan untuk belajar lebih intensif dari trainer di
                     ruang dan waktu yang disepakati.
@@ -90,19 +92,20 @@ function Kartu(props) {
               {" "}
               <Card className={classes.card}>
                 <CardContent>
-                  <Typography
+                  <h3
+                    style={{ color: "black" }}
                     className={classes.title}
                     color="textSecondary"
                     gutterBottom
                   >
                     Upgrade Your Brand
-                  </Typography>
+                  </h3>
                   <img
                     src="https://edwardsco.com/wp-content/uploads/2016/12/EDW0002_NCCS_1024x680_NCCS_Group2.jpg"
                     height="150px"
                     alt="logo"
                   />
-                  <p style={{ textAlign: "left" }} variant="h2">
+                  <p style={{ textAlign: "left", color: "black" }} variant="h2">
                     Bizlab hadir sebagai platform aktualisasi karena kami
                     percaya bahwa edukasi adalah media komunikasi terbaik
                     menyampaikan pesan sebuah branding.
