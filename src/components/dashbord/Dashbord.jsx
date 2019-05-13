@@ -155,7 +155,11 @@ export default function Blog() {
                 <p variant="h5" color="inherit" align="center" paragraph>
                   Pilih kelas belajar keterampilan profesional terkini
                 </p>{" "}
-                <Button variant="contained" className={classes.btn}>
+                <Button
+                  href="/login"
+                  variant="contained"
+                  className={classes.btn}
+                >
                   Coba Sekarang
                 </Button>
               </div>
