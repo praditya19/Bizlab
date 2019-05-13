@@ -22,7 +22,7 @@ const styles = theme => ({
     height: 350,
     width: 300,
     borderRadius: 40,
-    border: "solid 2px",
+    border: "solid 1px",
     color: "yellow"
   }
 });

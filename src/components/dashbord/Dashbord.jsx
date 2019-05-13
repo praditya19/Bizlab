@@ -24,9 +24,10 @@ const useStyles = makeStyles(theme => ({
   btn: {
     background: "#f5e900",
     borderRadius: 50,
-    width: 100,
+    width: 250,
     color: "white"
   },
+
   menuButton: {
     marginRight: theme.spacing(2)
   },
@@ -46,10 +47,12 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
-    backgroundImage: "url(https://source.unsplash.com/user/erondu)",
+    backgroundImage:
+      "url(https://1.bp.blogspot.com/-kT5WUAqGmww/WCV8yClzxGI/AAAAAAAAAJQ/PpS8ERxr_e0X1D3Z88YIkd_fsxYi8LQQgCLcB/s1600/IMG_20161111_150912.jpg)",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center"
+    backgroundPosition: "center",
+    height: 300
   },
   overlay: {
     position: "absolute",
@@ -167,8 +170,8 @@ export default function Blog() {
                 </h3>
                 <p variant="h5" color="inherit" align="center" paragraph>
                   Pilih kelas belajar keterampilan profesional terkini
-                </p>
-                <Button className={classes.btn} variant="outlined">
+                </p>{" "}
+                <Button variant="contained" className={classes.btn}>
                   Coba Sekarang
                 </Button>
               </div>
@@ -213,7 +216,7 @@ export default function Blog() {
                   <p variant="h5" color="inherit" align="center" paragraph>
                     klik untuk daftar mendaftar jadi trainer di Bizlab
                   </p>
-                  <Button className={classes.btn} variant="outlined">
+                  <Button variant="contained" className={classes.btn}>
                     Daftar Sekarang
                   </Button>
                 </div>

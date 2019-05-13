@@ -46,104 +46,96 @@ function FullWidthGrid(props) {
   const { classes } = props;
 
   return (
-    <div style={{ margin: 1, background: "#efefef" }} className={classes.root}>
+    <div style={{ background: "#efefef" }} className={classes.root}>
       <Container>
         <Button style={{ float: "right" }} component={Link} to="/vidio">
           View All
         </Button>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={3}>
-            <Paper className={classes.paper}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image="https://source.unsplash.com/random"
-                  title="Image title"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography>
-                    Membuat Prioritas Pekerjaan Einsenhower Matrix
-                  </Typography>
-                </CardContent>
-                <br />
-                <CardActions>
-                  <p variant="h5" gutterBottom color="primary">
-                    Evarisma Zahra
-                  </p>
-                </CardActions>
-              </Card>
-            </Paper>
+            <Card className={classes.card}>
+              <CardMedia
+                className={classes.cardMedia}
+                image="https://source.unsplash.com/random"
+                title="Image title"
+              />
+              <CardContent className={classes.cardContent}>
+                <Typography>
+                  Membuat Prioritas Pekerjaan Einsenhower Matrix
+                </Typography>
+              </CardContent>
+              <br />
+              <CardActions>
+                <p variant="h5" gutterBottom color="primary">
+                  Evarisma Zahra
+                </p>
+              </CardActions>
+            </Card>
           </Grid>
 
           <Grid item xs={12} sm={3}>
-            <Paper className={classes.paper}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image="https://source.unsplash.com/random"
-                  title="Image title"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography>
-                    Memahamai Dasar Financial Pribadi dan Usaha
-                  </Typography>
-                </CardContent>
+            <Card className={classes.card}>
+              <CardMedia
+                className={classes.cardMedia}
+                image="https://source.unsplash.com/random"
+                title="Image title"
+              />
+              <CardContent className={classes.cardContent}>
+                <Typography>
+                  Memahamai Dasar Financial Pribadi dan Usaha
+                </Typography>
+              </CardContent>
+              <br />
+              {""}
+              <CardActions>
                 <br />
-                {""}
-                <CardActions>
-                  <br />
-                  <p variant="h5" gutterBottom color="primary">
-                    Khaled Hadi Pranowo
-                  </p>
-                </CardActions>
-              </Card>
-            </Paper>
+                <p variant="h5" gutterBottom color="primary">
+                  Khaled Hadi Pranowo
+                </p>
+              </CardActions>
+            </Card>
           </Grid>
           <Grid item xs={12} sm={3}>
-            <Paper className={classes.paper}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image="https://source.unsplash.com/random"
-                  title="Image title"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography>
-                    Menentukan Value Proposition Sebuah Produk
-                  </Typography>
-                </CardContent>
+            <Card className={classes.card}>
+              <CardMedia
+                className={classes.cardMedia}
+                image="https://source.unsplash.com/random"
+                title="Image title"
+              />
+              <CardContent className={classes.cardContent}>
+                <Typography>
+                  Menentukan Value Proposition Sebuah Produk
+                </Typography>
+              </CardContent>
+              <br />
+              <CardActions>
                 <br />
-                <CardActions>
-                  <br />
-                  <p variant="h5" gutterBottom color="primary">
-                    Aditya Putra
-                  </p>
-                </CardActions>
-              </Card>
-            </Paper>
+                <p variant="h5" gutterBottom color="primary">
+                  Aditya Putra
+                </p>
+              </CardActions>
+            </Card>
           </Grid>
           <Grid item xs={12} sm={3}>
-            <Paper className={classes.paper}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image="https://source.unsplash.com/random"
-                  title="Image title"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography>Belajar Analisa Data dengan SPSS</Typography>
-                </CardContent>
+            <Card className={classes.card}>
+              <CardMedia
+                className={classes.cardMedia}
+                image="https://source.unsplash.com/random"
+                title="Image title"
+              />
+              <CardContent className={classes.cardContent}>
+                <Typography>Belajar Analisa Data dengan SPSS</Typography>
+              </CardContent>
+              <br />
+              <br />
+              <CardActions>
                 <br />
-                <br />
-                <CardActions>
-                  <br />
 
-                  <p variant="h5" gutterBottom color="primary">
-                    Erna Fransiska
-                  </p>
-                </CardActions>
-              </Card>
-            </Paper>
+                <p variant="h5" gutterBottom color="primary">
+                  Erna Fransiska
+                </p>
+              </CardActions>
+            </Card>
           </Grid>
         </Grid>
         <br />
