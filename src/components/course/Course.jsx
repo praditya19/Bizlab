@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import { Link } from "react-router-dom";
 
 const styles = theme => ({
   root: {
@@ -61,7 +62,7 @@ function FullWidthGrid(props) {
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={3}>
-            <Card className={classes.card}>
+            <Card component={Link} to="/detail" className={classes.card}>
               <CardMedia
                 className={classes.cardMedia}
                 image="https://source.unsplash.com/random"
