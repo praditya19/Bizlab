@@ -114,6 +114,7 @@ const footers = [
     description: ["Facebook", "Instagram"]
   }
 ];
+
 export default function Blog() {
   const classes = useStyles();
 
@@ -223,7 +224,6 @@ export default function Blog() {
                 <Typography variant="h6" color="textPrimary">
                   {footer.title}
                 </Typography>
-
                 {footer.description.map(item => (
                   <p key={item} variant="subtitle1" color="textSecondary">
                     {item}
