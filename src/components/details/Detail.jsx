@@ -18,6 +18,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListSubheader from "@material-ui/core/ListSubheader";
+import Plyr from "react-plyr";
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -55,26 +56,6 @@ const useStyles = makeStyles(theme => ({
   },
   cardMedia: {
     paddingTop: "56.25%" // 16:9
-  },
-  mainFeaturedPost: {
-    position: "relative",
-    backgroundColor: theme.palette.grey[800],
-    color: theme.palette.common.white,
-    marginBottom: theme.spacing(4),
-    backgroundImage:
-      "url(https://www.gurukelas.co.id/wp-content/uploads/2018/10/Pengertian-Kewirausahaan.png)",
-    backgroundSize: "cover",
-    height: 150,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center"
-  },
-  overlay: {
-    position: "absolute",
-    top: 0,
-    bottom: 0,
-    right: 0,
-    left: 0,
-    backgroundColor: "rgba(0,0,0,.3)"
   },
   mainFeaturedPostContent: {
     position: "relative",
@@ -211,30 +192,25 @@ function SimpleTabs() {
         </Toolbar>
       </AppBar>
       <br />
-      <Container style={{ background: "#efefef" }} maxWidth="lg">
+      <Container maxWidth="lg">
         <main>
-          <Paper className={classes.mainFeaturedPost}>
-            {
-              <Grid item xs={12} sm={3}>
-                <Card component={Link} to="/" className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                </Card>
-              </Grid>
-            }
-
-            <div className={classes.overlay} />
-            <Grid container>
-              <Grid item md={6}>
-                <div className={classes.mainFeaturedPostContent}>
-                  <Container />
-                </div>
-              </Grid>
+          {
+            <Grid item xs={12} sm={3}>
+              <Card component={Link} to="/">
+                <Plyr type="youtube" videoId="suGXZ1869qc" />
+              </Card>
             </Grid>
-          </Paper>
+          }
+
+          <div className={classes.overlay} />
+          <Grid container>
+            <Grid item md={6}>
+              <div className={classes.mainFeaturedPostContent}>
+                <Container />
+              </div>
+            </Grid>
+          </Grid>
+
           <Grid container spacing={4} className={classes.cardGrid} />
           <h3>Membuat Prioritas Pekerjaan dengan Eisenhower Matrix</h3>
 

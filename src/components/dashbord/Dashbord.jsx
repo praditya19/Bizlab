@@ -62,12 +62,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "rgba(0,0,0,.3)"
   },
   mainFeaturedPostContent: {
-    position: "relative",
-    padding: theme.spacing(3),
-    [theme.breakpoints.up("md")]: {
-      padding: theme.spacing(6),
-      paddingRight: 0
-    }
+    position: "relative"
   },
   mainGrid: {
     marginTop: theme.spacing(3)
@@ -131,8 +126,8 @@ export default function Blog() {
         </Toolbar>
       </AppBar>
       <main>
+        {/* Main featured post */}
         <Container>
-          {/* Main featured post */}
           <Paper className={classes.mainFeaturedPost}>
             {/* Increase the priority of the hero background image */}
             {
@@ -170,6 +165,7 @@ export default function Blog() {
               </Container>
             </Grid>
           </Paper>
+
           <br />
           <center>
             <h1>Kelas yang Tersedia</h1>
@@ -182,40 +178,40 @@ export default function Blog() {
           <Testimoni />
           <br />
           <br />
-          <Container>
-            <Paper className={classes.mainFeaturedPost}>
-              {/* Increase the priority of the hero background image */}
-              {
-                <img
-                  style={{ display: "none" }}
-                  src="https://source.unsplash.com/user/erondu"
-                  alt="background"
-                />
-              }
-              <div className={classes.overlay} />
-              <Grid container>
-                <Container style={{ textAlign: "center" }} maxWidth="sm">
-                  <div className={classes.mainFeaturedPostContent}>
-                    <h3
-                      component="h1"
-                      variant="h3"
-                      color="inherit"
-                      align="center"
-                      gutterBottom
-                    >
-                      Daftar Menjadi Trainer
-                    </h3>
-                    <p variant="h5" color="inherit" align="center" paragraph>
-                      klik untuk daftar mendaftar jadi trainer di Bizlab
-                    </p>
-                    <Button variant="contained" className={classes.btn}>
-                      Daftar Sekarang
-                    </Button>
-                  </div>
-                </Container>
-              </Grid>
-            </Paper>
-          </Container>
+
+          <Paper className={classes.mainFeaturedPost}>
+            {/* Increase the priority of the hero background image */}
+            {
+              <img
+                style={{ display: "none" }}
+                src="https://source.unsplash.com/user/erondu"
+                alt="background"
+              />
+            }
+            <Container />
+            <div className={classes.overlay} />
+            <Grid container>
+              <Container style={{ textAlign: "center" }} maxWidth="sm">
+                <div className={classes.mainFeaturedPostContent}>
+                  <h3
+                    component="h1"
+                    variant="h3"
+                    color="inherit"
+                    align="center"
+                    gutterBottom
+                  >
+                    Daftar Menjadi Trainer
+                  </h3>
+                  <p variant="h5" color="inherit" align="center" paragraph>
+                    klik untuk daftar mendaftar jadi trainer di Bizlab
+                  </p>
+                  <Button variant="contained" className={classes.btn}>
+                    Daftar Sekarang
+                  </Button>
+                </div>
+              </Container>
+            </Grid>
+          </Paper>
         </Container>
       </main>
 

@@ -12,12 +12,11 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
 import Avatar from "@material-ui/core/Avatar";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import ListItemText from "@material-ui/core/ListItemText";
-import ListSubheader from "@material-ui/core/ListSubheader";
+import Plyr from "react-plyr";
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -56,18 +55,7 @@ const useStyles = makeStyles(theme => ({
   cardMedia: {
     paddingTop: "56.25%" // 16:9
   },
-  mainFeaturedPost: {
-    position: "relative",
-    backgroundColor: theme.palette.grey[800],
-    color: theme.palette.common.white,
-    marginBottom: theme.spacing(4),
-    backgroundImage:
-      "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90B5X7oDmFQKkdFZliwh6r5Pxk0YBw8iVqiM7B5nwueIipKnC)",
-    backgroundSize: "cover",
-    height: 300,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center"
-  },
+
   overlay: {
     position: "absolute",
     top: 0,
@@ -211,30 +199,25 @@ function SimpleTabs() {
         </Toolbar>
       </AppBar>
       <br />
-      <Container style={{ background: "#efefef" }} maxWidth="lg">
+      <Container maxWidth="lg">
         <main>
-          <Paper className={classes.mainFeaturedPost}>
-            {
-              <Grid item xs={12} sm={3}>
-                <Card component={Link} to="/" className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                </Card>
-              </Grid>
-            }
-
-            <div className={classes.overlay} />
-            <Grid container>
-              <Grid item md={6}>
-                <div className={classes.mainFeaturedPostContent}>
-                  <Container />
-                </div>
-              </Grid>
+          {
+            <Grid item xs={12} sm={3}>
+              <Card style={{ background: "#efefef" }} component={Link} to="/">
+                <Plyr type="youtube" videoId="JGsNPMKI4TY" />
+              </Card>
             </Grid>
-          </Paper>
+          }
+
+          <div />
+          <Grid container>
+            <Grid item md={6}>
+              <div className={classes.mainFeaturedPostContent}>
+                <Container />
+              </div>
+            </Grid>
+          </Grid>
+
           <Grid container spacing={4} className={classes.cardGrid} />
           <h3>Memahami Dasar Financial Pribadi dan Usaha</h3>
 
