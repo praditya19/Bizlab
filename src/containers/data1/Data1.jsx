@@ -13,7 +13,11 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
+import Avatar from "@material-ui/core/Avatar";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemAvatar from "@material-ui/core/ListItemAvatar";
+import ListItemText from "@material-ui/core/ListItemText";
+import ListSubheader from "@material-ui/core/ListSubheader";
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -57,7 +61,8 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
-    backgroundImage: "url(https://source.unsplash.com/user/erondu)",
+    backgroundImage:
+      "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90B5X7oDmFQKkdFZliwh6r5Pxk0YBw8iVqiM7B5nwueIipKnC)",
     backgroundSize: "cover",
     height: 300,
     backgroundRepeat: "no-repeat",
@@ -73,6 +78,7 @@ const useStyles = makeStyles(theme => ({
   },
   mainFeaturedPostContent: {
     position: "relative",
+    marginLeft: 30,
     padding: theme.spacing(3),
     [theme.breakpoints.up("md")]: {
       padding: theme.spacing(6),
@@ -125,6 +131,14 @@ const useStyles = makeStyles(theme => ({
     width: 150,
     fontSize: 15
   },
+  bttn: {
+    background: "#ffcf03",
+    color: "white",
+    height: 50,
+    width: 150,
+    fontSize: 15,
+    border: 0
+  },
   review: {
     borderRadius: "50%"
   },
@@ -148,6 +162,28 @@ const footers = [
   {
     title: "Sosial Media Kami",
     description: ["Facebook", "Instagram"]
+  }
+];
+const messages = [
+  {
+    id: 1,
+    primary: "Dion Aditya",
+    secondary: "inida",
+    person:
+      "https://lh5.googleusercontent.com/-_4Ivqp5lZyg/AAAAAAAAAAI/AAAAAAAAADs/pe2k-zEHYKY/photo.jpg"
+  },
+  {
+    id: 2,
+    primary: "Dion Aditya",
+    secondary: `bjbjb`,
+    person:
+      "https://lh5.googleusercontent.com/-_4Ivqp5lZyg/AAAAAAAAAAI/AAAAAAAAADs/pe2k-zEHYKY/photo.jpg"
+  },
+  {
+    id: 3,
+    primary: "Bizlab",
+    secondary: "oke deh",
+    person: "https://miro.medium.com/max/3150/1*LMy90jpx18PR8VY9LJoP-g.png"
   }
 ];
 TabContainer.propTypes = {
@@ -194,26 +230,25 @@ function SimpleTabs() {
             <Grid container>
               <Grid item md={6}>
                 <div className={classes.mainFeaturedPostContent}>
-                  <br />
-                  <h3>huhuhuhu</h3>
+                  <Container />
                 </div>
               </Grid>
             </Grid>
           </Paper>
           <Grid container spacing={4} className={classes.cardGrid} />
-          <h3>Membuat Prioritas Pekerjaan dengan Eisenhower Matrix</h3>
+          <h3>Memahami Dasar Financial Pribadi dan Usaha</h3>
 
           <Toolbar>
             <img
               style={{ width: 35, margin: 10 }}
               src="https://miro.medium.com/max/3150/1*LMy90jpx18PR8VY9LJoP-g.png"
             />
-            <p>Evarisma Zahra</p>
+            <p>Khaled Hadi Pranowo</p>
           </Toolbar>
 
           <Container>
             <Grid container spacing={5} className={classes.mainGrid}>
-              <Grid item xs={12} md={8}>
+              <Grid item xs={12} md={8} style={{ background: "white" }}>
                 <Tabs value={value} onChange={handleChange}>
                   <Tab label="Tentang" />
                   <Tab label="Review" />
@@ -224,72 +259,49 @@ function SimpleTabs() {
                       Sylabus
                     </h4>
                     <ul className={classes.detail}>
-                      <li>Pengantar Matriks Eisenhower (00.00 - 01.30)</li>
                       <li>
-                        Implementasi perbedaan antara tugas yang penting dan
-                        mendesak (01.30 - 10.10)
+                        Membedakan keinginan dan kebutuhan (00.00 - 03.00)
                       </li>
-                      <li>Manfaat Matriks Eisenhower (10.10 - 10.30)</li>
+                      <li>Menentukan target dan tujuan (03.00 - 04.50)</li>
+                      <li>Memahami konsep SMART (00.00 - 05.00)</li>
                       <li>
-                        Menentukan urutan tugas yang penting dan mendesak (10.30
-                        -13.45)
+                        Menyusun laporan keuangan dan laporan laba rugi (05.00 -
+                        10.00)
                       </li>
-                      <li>
-                        Mengadopsi Matriks dalam kehidupan (13.45 - 15.07)
-                      </li>
+                      <li>Melakukan evaluasi keuangan (0.00 - 12.53)</li>
                     </ul>
                     {""}
                     <h4 className={classes.judul} gutterBottom>
                       About Class
                     </h4>
                     <p className={classes.detail}>
-                      Dikejar deadline, tidak produktif, dan tidak mencapai
-                      target adalah mimpi buruk yang mungkin kamu alami.
-                      Sebenarnya hal ini terjadi karena kesalahan kamu dalam
-                      mengatur waktu, yang membuat kamu selalu merasa waktu
-                      berjalan sangat cepat. Kunci agar kamu bisa memaksimalkan
-                      24 jam waktu yang tersedia dengan baik dapat dipelajari
-                      dengan memahami metode Matriks Eisenhower. Melalui video
-                      ini kamu akan mempelajari metode yang tepat dalam mengatur
-                      waktumu dalam satu hari. Jadi, ayo mulai hidup kamu
-                      menjadi lebih produktif dengan melihat video ini.
+                      Kamu ingin memiliki rumah, mobil atau barang mewah
+                      lainnya? Ingin mengembangkan keuangan dan aset yang kamu
+                      miliki? Salah satu kunci untuk memiliki “Financial goals ”
+                      dimasa depan adalah dengan mengatur keuanganmu. Semakin
+                      cepat kamu mulai mengatur keuangan semakin cepat juga kamu
+                      akan mencapai Financial goals diusia dan traget yang kamu
+                      impikan. Jadi, ayo belajar untuk mengatur keuangan mu
+                      dengan mulai memahami dasar finansial dengan video dari
+                      Bizlab.
                     </p>
                   </TabContainer>
                 )}
                 {value === 1 && (
                   <TabContainer>
-                    <Toolbar>
-                      <img
-                        className={classes.review}
-                        style={{ width: 35, margin: 10 }}
-                        src="https://lh5.googleusercontent.com/-_4Ivqp5lZyg/AAAAAAAAAAI/AAAAAAAAADs/pe2k-zEHYKY/photo.jpg"
-                      />
-                      <p>&nbsp;Dion Aditya</p>
-                    </Toolbar>
-                  </TabContainer>
-                )}
-                {value === 1 && (
-                  <TabContainer>
-                    <Toolbar>
-                      <img
-                        className={classes.review}
-                        style={{ width: 35, margin: 10 }}
-                        src="https://lh5.googleusercontent.com/-_4Ivqp5lZyg/AAAAAAAAAAI/AAAAAAAAADs/pe2k-zEHYKY/photo.jpg"
-                      />
-                      <p>&nbsp;Dion Aditya</p>
-                    </Toolbar>
-                  </TabContainer>
-                )}
-                {value === 1 && (
-                  <TabContainer>
-                    <Toolbar>
-                      <img
-                        className={classes.review}
-                        style={{ width: 35, margin: 10 }}
-                        src="https://miro.medium.com/max/3150/1*LMy90jpx18PR8VY9LJoP-g.png"
-                      />
-                      <p>&nbsp;Bizlab</p>
-                    </Toolbar>
+                    {messages.map(({ id, primary, secondary, person }) => (
+                      <React.Fragment key={id}>
+                        <ListItem button>
+                          <ListItemAvatar>
+                            <Avatar alt="Profile Picture" src={person} />
+                          </ListItemAvatar>
+                          <ListItemText
+                            primary={primary}
+                            secondary={secondary}
+                          />
+                        </ListItem>
+                      </React.Fragment>
+                    ))}
                   </TabContainer>
                 )}
                 <Divider />
@@ -300,9 +312,9 @@ function SimpleTabs() {
 
               <Grid item xs={12} md={4}>
                 <Paper elevation={0} className={classes.sidebarAboutBox}>
-                  <h5>Membuat Prioritas Pekerjaan dengan Eisenhower Matrix</h5>
+                  <h5>Memahami Dasar Financial Pribadi dan Usaha</h5>
                   {""}
-                  <p className={classes.p}>By Evarisma Zahra</p>
+                  <p className={classes.p}>By Khaled Hadi Pranowo</p>
                   <hr />
                   <p className={classes.p}>Price</p>
                   <p className={classes.P}>Rp&nbsp;80.000,00</p>

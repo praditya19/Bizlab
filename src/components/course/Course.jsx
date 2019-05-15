@@ -5,13 +5,12 @@ import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import { Link } from "react-router-dom";
-
+import Plyr from "react-plyr";
 const styles = theme => ({
   root: {
     flexGrow: 1
@@ -63,11 +62,7 @@ function FullWidthGrid(props) {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={3}>
             <Card component={Link} to="/detail" className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
+              <Plyr type="youtube" videoId="suGXZ1869qc" />
               <CardContent className={classes.cardContent}>
                 <Typography>
                   Membuat Prioritas Pekerjaan Einsenhower Matrix
@@ -83,12 +78,8 @@ function FullWidthGrid(props) {
           </Grid>
 
           <Grid item xs={12} sm={3}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
+            <Card component={Link} to="/detail/1" className={classes.card}>
+              <Plyr type="youtube" videoId="JGsNPMKI4TY" />
               <CardContent className={classes.cardContent}>
                 <Typography>
                   Memahamai Dasar Financial Pribadi dan Usaha
@@ -105,12 +96,8 @@ function FullWidthGrid(props) {
             </Card>
           </Grid>
           <Grid item xs={12} sm={3}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
+            <Card component={Link} to="/detail/2" className={classes.card}>
+              <Plyr type="youtube" videoId="saBX7XwBLC4" />
               <CardContent className={classes.cardContent}>
                 <Typography>
                   Menentukan Value Proposition Sebuah Produk
@@ -126,12 +113,8 @@ function FullWidthGrid(props) {
             </Card>
           </Grid>
           <Grid item xs={12} sm={3}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
+            <Card component={Link} to="/detail/3" className={classes.card}>
+              <Plyr type="youtube" videoId="T4APOiyeScE" />
               <CardContent className={classes.cardContent}>
                 <Typography>Belajar Analisa Data dengan SPSS</Typography>
               </CardContent>
