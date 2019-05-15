@@ -131,57 +131,8 @@ export default function Blog() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Main featured post */}
-        <Paper className={classes.mainFeaturedPost}>
-          {/* Increase the priority of the hero background image */}
-          {
-            <img
-              style={{ display: "none" }}
-              src="https://source.unsplash.com/user/erondu"
-              alt="background"
-            />
-          }
-          <div className={classes.overlay} />
-          <Grid container>
-            <Container style={{ textAlign: "center" }} maxWidth="sm">
-              <div className={classes.mainFeaturedPostContent}>
-                <h3
-                  component="h1"
-                  variant="h3"
-                  color="inherit"
-                  align="center"
-                  gutterBottom
-                >
-                  Belajar Keahlian Terkini
-                </h3>
-                <p variant="h5" color="inherit" align="center" paragraph>
-                  Pilih kelas belajar keterampilan profesional terkini
-                </p>{" "}
-                <Button
-                  component={Link}
-                  to="/login"
-                  variant="contained"
-                  className={classes.btn}
-                >
-                  Coba Sekarang
-                </Button>
-              </div>
-            </Container>
-          </Grid>
-        </Paper>
-        <br />
-        <center>
-          <h1>Kelas yang Tersedia</h1>
-        </center>
-        <br />
-        <Vidio />
-        <Kartu />
-        <br />
-        <br />
-        <Testimoni />
-        <br />
-        <br />
         <Container>
+          {/* Main featured post */}
           <Paper className={classes.mainFeaturedPost}>
             {/* Increase the priority of the hero background image */}
             {
@@ -202,20 +153,72 @@ export default function Blog() {
                     align="center"
                     gutterBottom
                   >
-                    Daftar Menjadi Trainer
+                    Belajar Keahlian Terkini
                   </h3>
                   <p variant="h5" color="inherit" align="center" paragraph>
-                    klik untuk daftar mendaftar jadi trainer di Bizlab
-                  </p>
-                  <Button variant="contained" className={classes.btn}>
-                    Daftar Sekarang
+                    Pilih kelas belajar keterampilan profesional terkini
+                  </p>{" "}
+                  <Button
+                    component={Link}
+                    to="/login"
+                    variant="contained"
+                    className={classes.btn}
+                  >
+                    Coba Sekarang
                   </Button>
                 </div>
               </Container>
             </Grid>
           </Paper>
+          <br />
+          <center>
+            <h1>Kelas yang Tersedia</h1>
+          </center>
+          <br />
+          <Vidio />
+          <Kartu />
+          <br />
+          <br />
+          <Testimoni />
+          <br />
+          <br />
+          <Container>
+            <Paper className={classes.mainFeaturedPost}>
+              {/* Increase the priority of the hero background image */}
+              {
+                <img
+                  style={{ display: "none" }}
+                  src="https://source.unsplash.com/user/erondu"
+                  alt="background"
+                />
+              }
+              <div className={classes.overlay} />
+              <Grid container>
+                <Container style={{ textAlign: "center" }} maxWidth="sm">
+                  <div className={classes.mainFeaturedPostContent}>
+                    <h3
+                      component="h1"
+                      variant="h3"
+                      color="inherit"
+                      align="center"
+                      gutterBottom
+                    >
+                      Daftar Menjadi Trainer
+                    </h3>
+                    <p variant="h5" color="inherit" align="center" paragraph>
+                      klik untuk daftar mendaftar jadi trainer di Bizlab
+                    </p>
+                    <Button variant="contained" className={classes.btn}>
+                      Daftar Sekarang
+                    </Button>
+                  </div>
+                </Container>
+              </Grid>
+            </Paper>
+          </Container>
         </Container>
       </main>
+
       <Container>
         <footer className={(classes.footer, classes.layout)}>
           <Grid container spacing={2}>
