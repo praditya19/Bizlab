@@ -62,9 +62,9 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
     backgroundImage:
-      "url(https://www.gurukelas.co.id/wp-content/uploads/2018/10/Pengertian-Kewirausahaan.png)",
+      "url(https://3.bp.blogspot.com/--iNwuelKp1E/VtPmhB8VC8I/AAAAAAAAAlI/q5PWKKInRqA/s1600/spss_icon_by_rndzvs-d6grj8b.png)",
     backgroundSize: "cover",
-    height: 150,
+    height: 300,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center"
   },
