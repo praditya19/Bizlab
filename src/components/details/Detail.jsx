@@ -17,7 +17,7 @@ import Avatar from "@material-ui/core/Avatar";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import ListItemText from "@material-ui/core/ListItemText";
-import ListSubheader from "@material-ui/core/ListSubheader";
+import Button from "@material-ui/core/Button";
 import Plyr from "react-plyr";
 function TabContainer(props) {
   return (
@@ -181,14 +181,18 @@ function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="relative" style={{ backgroundColor: "#911fd3" }}>
+      <AppBar position="relative" style={{ backgroundColor: "white" }}>
         <Toolbar className={classes.toolbar}>
           <img
             style={{ width: 35 }}
             src="https://miro.medium.com/max/3150/1*LMy90jpx18PR8VY9LJoP-g.png"
           />
-          <Typography style={{ marginLeft: 20 }}>Home</Typography>
-          <Typography style={{ marginLeft: 20 }}>Cari Kelas</Typography>
+          <Button style={{ marginLeft: 20 }} component={Link} to="/">
+            Home
+          </Button>
+          <Button style={{ marginLeft: 20 }} component={Link} to="course">
+            Cari Kelas
+          </Button>
         </Toolbar>
       </AppBar>
       <br />
