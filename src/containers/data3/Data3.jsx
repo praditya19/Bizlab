@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import PropTypes from "prop-types";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
 import Divider from "@material-ui/core/Divider";
 import Container from "@material-ui/core/Container";
 import AppBar from "@material-ui/core/AppBar";
@@ -19,6 +19,7 @@ import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import Plyr from "react-plyr";
+import Button from "@material-ui/core/Button";
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -207,8 +208,12 @@ function SimpleTabs() {
             style={{ width: 35 }}
             src="https://miro.medium.com/max/3150/1*LMy90jpx18PR8VY9LJoP-g.png"
           />
-          <Typography style={{ marginLeft: 20 }}>Home</Typography>
-          <Typography style={{ marginLeft: 20 }}>Cari Kelas</Typography>
+          <Button style={{ marginLeft: 20 }} component={Link} to="/">
+            Home
+          </Button>
+          <Button style={{ marginLeft: 20 }} component={Link} to="/course">
+            Cari Kelas
+          </Button>
         </Toolbar>
       </AppBar>
       <br />
