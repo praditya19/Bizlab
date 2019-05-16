@@ -189,7 +189,7 @@ function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="relative" style={{ backgroundColor: "#911fd3" }}>
+      <AppBar position="relative" style={{ backgroundColor: "white" }}>
         <Toolbar className={classes.toolbar}>
           <img
             style={{ width: 35 }}

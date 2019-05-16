@@ -12,12 +12,10 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
 import Avatar from "@material-ui/core/Avatar";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import ListItemText from "@material-ui/core/ListItemText";
-import ListSubheader from "@material-ui/core/ListSubheader";
 import Plyr from "react-plyr";
 import Button from "@material-ui/core/Button";
 function TabContainer(props) {
@@ -202,7 +200,7 @@ function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="relative" style={{ backgroundColor: "#911fd3" }}>
+      <AppBar position="relative" style={{ backgroundColor: "white" }}>
         <Toolbar className={classes.toolbar}>
           <img
             style={{ width: 35 }}
