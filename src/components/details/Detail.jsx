@@ -189,7 +189,7 @@ function SimpleTabs() {
           <Button style={{ marginLeft: 20 }} component={Link} to="/">
             Home
           </Button>
-          <Button style={{ marginLeft: 20 }} component={Link} to="course">
+          <Button style={{ marginLeft: 20 }} component={Link} to="/course">
             Cari Kelas
           </Button>
         </Toolbar>
