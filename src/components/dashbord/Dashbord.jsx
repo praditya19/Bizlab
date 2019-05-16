@@ -125,8 +125,12 @@ export default function Blog() {
             style={{ width: 35 }}
             src="https://miro.medium.com/max/3150/1*LMy90jpx18PR8VY9LJoP-g.png"
           />
-          <Typography style={{ marginLeft: 20 }}>Home</Typography>
-          <Typography style={{ marginLeft: 20 }}>Cari Kelas</Typography>
+          <Button style={{ marginLeft: 20 }} component={Link} to="/">
+            Home
+          </Button>
+          <Button style={{ marginLeft: 20 }} component={Link} to="/course">
+            Cari Kelas
+          </Button>
         </Toolbar>
       </AppBar>
       <main>

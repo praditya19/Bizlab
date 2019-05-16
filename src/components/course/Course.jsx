@@ -11,6 +11,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import { Link } from "react-router-dom";
 import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
 const styles = theme => ({
   root: {
     flexGrow: 1
@@ -47,14 +48,18 @@ function FullWidthGrid(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="relative" style={{ backgroundColor: "#911fd3" }}>
+      <AppBar position="relative" style={{ backgroundColor: "white" }}>
         <Toolbar className={classes.toolbar}>
           <img
             style={{ width: 35 }}
             src="https://miro.medium.com/max/3150/1*LMy90jpx18PR8VY9LJoP-g.png"
           />
-          <Typography style={{ marginLeft: 20 }}>Home</Typography>
-          <Typography style={{ marginLeft: 20 }}>Cari Kelas</Typography>
+          <Button style={{ marginLeft: 20 }} component={Link} to="/">
+            Home
+          </Button>
+          <Button style={{ marginLeft: 20 }} component={Link} to="/course">
+            Cari Kelas
+          </Button>
         </Toolbar>
       </AppBar>
       <br />
